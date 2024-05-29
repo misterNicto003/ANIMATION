@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-image: url(https://www.figma.com/file/rb7ezTQKWjspYCcssJuwSv/image/38315c7e9c01e5a7294e7b1cbebc53a59a7d48e8);
+}
