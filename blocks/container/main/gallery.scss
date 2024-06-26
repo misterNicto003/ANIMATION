@@ -47,19 +47,32 @@
     transition: 300ms;
   }
 
-  @include for-size(phone) {
+  @include for-size(paptop) {
     &_swiper {
       display: flex;
       overflow: hidden;
       overflow: scroll;
 
       img {
-        max-width: 280px;
+        width: 100%;
       }
 
-      &_slide_img {
-        height: 100%;
-        object-fit: cover;
+      &_slide{
+
+        img{
+          width:280px ;
+
+        }
+
+        &_img{
+          max-height: 250px;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+
+        }
+
+        
       }
     }
   }
