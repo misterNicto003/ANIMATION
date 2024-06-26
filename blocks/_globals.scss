@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@font-face {
+  font-family: "NEXT ART";
+  src: local("NEXT ART"),
+    url("../fonts/next_art_bold-webfont.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1197px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1a3e3e;
+  border-radius: 4px;
+  font-weight: $fw-600;
+  font-size: $fs-16;
+  line-height: $lh-27;
+  background: $color-1A3E3E;
+  color: $color-FFFFFF;
+  cursor: pointer;
+}
+li {
+  text-decoration: none;
+}
+
+.subtible {
+  font-size: $fs-24;
+  font-weight: $fw-400;
+  line-height: $lh-20;
+  color: $color-F2BE22;
+}
+
+.title {
+  margin: 8px 0px 40px;
+  font-size: $fs-32;
+  font-weight: $fw-800;
+  line-height: $lh-38-4;
+  color: $color-18121E;
+}
+.text {
+  margin: 0 0 40px;
+  font-size: $fs-18;
+  font-weight: $fw-400;
+  line-height: $lh-27;
+  color: $color-18121E;
+}

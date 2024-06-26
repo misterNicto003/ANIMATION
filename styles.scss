@@ -1,4 +1,6 @@
 
-@import "globals";
+@import "blocks/const/root";
+@import  "blocks/container/mixin", "blocks/minireset","blocks/container/header", "blocks/container/main",  "blocks/container/footer","blocks/globals";
 
-@import "blocks/header", "blocks/main", "blocks/footer";
+
+

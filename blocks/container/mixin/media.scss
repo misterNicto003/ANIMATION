@@ -1,0 +1,28 @@
+@mixin for-size($size) {
+  @if $size==phone {
+    @media (max-width: 390px) {
+      @content;
+    }
+  } @else if $size==captop {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+   @else if $size==paptop {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $size==laptop {
+    @media (max-width: 1100px) {
+      @content;
+    }
+  } @else if $size==daptop {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $size==desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}

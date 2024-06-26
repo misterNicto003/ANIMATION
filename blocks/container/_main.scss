@@ -1,0 +1,10 @@
+.main {
+  // @import "./mixin/index.scss";
+
+  @import "./main/about";
+  @import "./main/offer.scss";
+  @import "./main/popular.scss";
+  @import "./main/blog.scss";
+  @import "./main/gallery.scss";
+  @import "./main/newsletter";
+}

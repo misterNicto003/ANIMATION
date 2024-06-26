@@ -1,0 +1,116 @@
+&__newsletter {
+  position: relative;
+  top: 100px;
+
+  &_wrapper {
+    // flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 40px 100px;
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+    background: #fdfdfd;
+    gap: 64px;
+  }
+  &_content {
+    flex: 0 0 380px;
+
+    &_subtitle {
+      font-weight: $fw-400;
+      line-height: $lh-20;
+      color: $color-F2BE22;
+      margin-bottom: 8px;
+
+      font-size: $fs-18;
+    }
+    &_title {
+      font-weight: $fw-800;
+      line-height: $lh-31-2;
+      color: $color-18121E;
+      font-size: $fs-26;
+    }
+  }
+  &_substribe {
+    &_text {
+      font-size: $fs-16;
+      font-weight: $fw-600;
+      margin-bottom: 8px;
+    }
+    &_form {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+
+      &_input {
+        padding: 12px 24px;
+        color: $color-18121E;
+        background: $color-F3F5F4;
+        border-radius: 4px;
+        max-width: 280px;
+        max-height: 44px;
+        border: none;
+      }
+
+      &_button {
+        padding: 12px 24px;
+        max-width: 240px;
+        max-height: 44px;
+      }
+    }
+    &_terms {
+      font-size: $fs-14;
+      font-weight: $fw-600;
+      line-height: $lh-18;
+      color: $color-18121E;
+
+      &_link {
+        text-decoration: underline;
+        color: $color-18121E;
+      }
+    }
+  }
+
+  @include for-size(phone) {
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+
+      margin-bottom: 50px;
+    }
+
+    &_content {
+      flex: none;
+    }
+    &_substribe_form {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-bottom: 24px;
+
+      &_button {
+        display: flex;
+        justify-content: start;
+      }
+    }
+  }
+
+  @include for-size(paptop) {
+    &_wrapper {
+      flex-wrap: wrap;
+    }
+  }
+
+  @include for-size(paptop) {
+    &_content {
+      flex:unset;
+
+      &_title{
+
+        flex: none;
+      }
+    }
+  }
+}
